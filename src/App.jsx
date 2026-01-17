@@ -10,7 +10,7 @@ function cx(...classes) {
 
 function Pill({ children }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm backdrop-blur">
+    <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50/70 px-3 py-1 text-xs font-semibold text-amber-900 shadow-sm backdrop-blur">
       {children}
     </span>
   );
@@ -86,7 +86,7 @@ function PrimaryButton({ href, children }) {
       href={href}
       target={external ? "_blank" : undefined}
       rel={external ? "noreferrer" : undefined}
-      className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-400"
+      className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:from-indigo-500 hover:via-blue-500 hover:to-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
     >
       {children}
     </a>
@@ -121,7 +121,7 @@ export default function App() {
       <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <div className="flex items-center gap-3">
-            <div className="grid h-10 w-10 place-items-center rounded-xl bg-slate-900 text-white font-bold">
+            <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-indigo-700 to-sky-600 text-white font-bold">
               ECE
             </div>
             <div className="leading-tight">
@@ -152,8 +152,8 @@ export default function App() {
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-white to-slate-50" />
-        <div className="pointer-events-none absolute -top-24 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-slate-900/10 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-sky-50 to-amber-50" />
+        <div className="pointer-events-none absolute -top-24 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-indigo-600/20 blur-3xl" />
 
         <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
           <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
@@ -206,7 +206,7 @@ export default function App() {
                       B.Tech &amp; M.Tech | ECE | IIT Bhubaneswar
                     </div>
                   </div>
-                  <span className="rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold text-white">
+                  <span className="rounded-full bg-amber-400 px-3 py-1 text-xs font-semibold text-slate-900">
                     QR + Link
                   </span>
                 </div>
@@ -552,7 +552,7 @@ export default function App() {
       {/* Resumes */}
       <section id="resumes" className="border-t border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <div className="rounded-3xl border border-slate-200 bg-slate-900 px-6 py-10 text-white shadow-soft sm:px-10">
+          <div className="rounded-3xl border border-slate-200 bg-gradient-to-r from-indigo-950 via-slate-900 to-sky-900 px-6 py-10 text-white shadow-soft sm:px-10">
             <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
               <div className="lg:col-span-7">
                 <div className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold">
@@ -631,7 +631,7 @@ export default function App() {
             <div className="text-sm font-bold text-slate-900">Access Resumes</div>
             <div className="text-xs text-slate-600">Drive repository (verified)</div>
           </div>
-          <div className="rounded-xl bg-slate-900 px-3 py-2 text-xs font-semibold text-white">Open</div>
+          <div className="rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 px-3 py-2 text-xs font-semibold text-white">Open</div>
         </a>
       </div>
     </div>
