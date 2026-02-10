@@ -181,8 +181,8 @@ export default function App() {
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
                 {[
                   { k: "B.Tech", v: "~60 / year" },
-                  { k: "M.Tech (VLSI)", v: "~25 / year" },
-                  { k: "M.Tech (SPC)", v: "~25 / year" },
+                  { k: "M.Tech (STCD)", v: "~20 / year" },
+                  { k: "M.Tech (SPCE)", v: "~20 / year" },
                 ].map((x) => (
                   <div
                     key={x.k}
@@ -347,7 +347,7 @@ export default function App() {
             </Card>
 
             <Card
-              title="M.Tech — Microelectronics & VLSI Design"
+              title="M.Tech — Semiconductor Technology and Chip Design"
               subtitle="Intake ~25 / year"
               footer={
                 <div className="text-xs text-slate-600">
@@ -455,7 +455,7 @@ export default function App() {
           />
 
           <div className="mt-8 grid gap-4 lg:grid-cols-3">
-            <Card title="Semiconductor & VLSI">
+            <Card title="Semiconductor Technology and Chip Design">
               <BulletList
                 items={[
                   "Analog / mixed-signal IC design themes",
